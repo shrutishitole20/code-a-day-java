@@ -1,0 +1,33 @@
+public class WavePrintMatrix {
+    public static void main(String[] args) {
+        // Example matrix (you can change the size and values)
+        int[][] matrix = {
+            {1,  2,  3,  4},
+            {5,  6,  7,  8},
+            {9, 10, 11, 12}
+        };
+
+        System.out.println("Matrix in Wave Order:");
+        printWaveOrder(matrix);
+    }
+
+    // Function to print wave order
+    public static void printWaveOrder(int[][] matrix) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        for (int col = 0; col < cols; col++) {
+            if (col % 2 == 0) {
+                // Even column: top to bottom
+                for (int row = 0; row < rows; row++) {
+                    System.out.print(matrix[row][col] + " ");
+                }
+            } else {
+                // Odd column: bottom to top
+                for (int row = rows - 1; row >= 0; row--) {
+                    System.out.print(matrix[row][col] + " ");
+                }
+            }
+        }
+    }
+}
