@@ -31,3 +31,12 @@ public class WavePrintMatrix {
         }
     }
 }
+
+
+/*
+
+Matrix in Wave Order:
+1 5 9 10 6 2 3 7 11 12 8 4 
+
+*/
+
