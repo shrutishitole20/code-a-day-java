@@ -24,3 +24,9 @@ public class FirstLastOccurrence {
         }
     }
 }
+
+/*
+First occurrence of 5 is at position: 2
+Last occurrence of 5 is at position: 6
+
+*/
