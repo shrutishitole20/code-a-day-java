@@ -1,0 +1,17 @@
+public class RemoveAllWhiteSpaces {
+    public static void main(String[] args) {
+        String str = "this is a string";
+
+        // Pass 'str' to the method
+        String trimmedStr = removeWhitespaces(str);
+
+        System.out.println("String after removing white spaces: " + trimmedStr);
+    }
+
+    public static String removeWhitespaces(String str) {
+        // \s matches spaces, tabs, newlines etc.
+        return str.replaceAll("\\s", "");
+    }
+}
+//String after removing white spaces: thisisastring
+
