@@ -1,0 +1,15 @@
+public class Arraysum {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        int sum = 0;
+
+        for (int num : array) {
+            sum += num;   // no space between + and =
+        }
+
+        System.out.println("Sum of elements in array: " + sum);
+    }
+}
+
+Sum of elements in array: 15
+
