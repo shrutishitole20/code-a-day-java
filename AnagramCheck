@@ -1,0 +1,42 @@
+import java.util.Arrays;
+
+public class AnagramCheck {
+    public static void main(String[] args) {
+        String str1 = "Shruti";
+        String str2 = "utrish";
+
+        boolean isAnagram = checkAnagram(str1, str2);
+
+        if (isAnagram) {
+            System.out.println(str1 + " and " + str2 + " are anagrams.");
+        } else {
+            System.out.println(str1 + " and " + str2 + " are not anagrams.");
+        }
+    }
+
+    // Method to check anagram
+    public static boolean checkAnagram(String str1, String str2) {
+        // Convert both strings to lowercase for case-insensitive check
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+
+        // If lengths are different, not an anagram
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+
+        // Convert strings to char arrays
+        char[] char1 = str1.toCharArray();
+        char[] char2 = str2.toCharArray();
+
+        // Sort arrays
+        Arrays.sort(char1);
+        Arrays.sort(char2);
+
+        // Compare sorted arrays
+        return Arrays.equals(char1, char2);
+    }
+
+//Shruti and utrish are anagrams.
+
+}
