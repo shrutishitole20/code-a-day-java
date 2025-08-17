@@ -1,0 +1,20 @@
+public class ReverseString {
+    public static void main(String[] args) {
+        String str = "abaaa";
+        
+        // Method 1: Using StringBuilder (easy way)
+        String reversed = new StringBuilder(str).reverse().toString();
+        System.out.println("Reversed String (Method 1): " + reversed);
+        
+        // Method 2: Using loop (manual way)
+        String rev = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            rev += str.charAt(i);
+        }
+        System.out.println("Reversed String (Method 2): " + rev);
+    }
+}
+/*
+Reversed String (Method 1): aaaba
+Reversed String (Method 2): aaaba
+*/
