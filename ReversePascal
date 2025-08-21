@@ -7,8 +7,10 @@
 
 */
 
-public class ReversePascal {
-    public static void main(String[] args) {
+public class ReversePascal 
+{
+    public static void main(String[] args) 
+    {
         int rows = 5; // number of rows
 
         // Generate Pascal's Triangle first
@@ -22,7 +24,8 @@ public class ReversePascal {
         }
 
         // Print in reverse order
-        for (int i = rows - 1; i >= 0; i--) {
+        for (int i = rows - 1; i >= 0; i--) 
+        {
             for (int j = 0; j <= i; j++) {
                 System.out.print(pascal[i][j] + " ");
             }
