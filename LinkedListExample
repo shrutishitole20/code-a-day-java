@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+        LinkedList<String> animals = new LinkedList<>();
+
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+
+        System.out.println("LinkedList: " + animals);
+
+        animals.addFirst("Elephant");
+        animals.addLast("Tiger");
+
+        System.out.println("Updated LinkedList: " + animals);
+    }
+}
