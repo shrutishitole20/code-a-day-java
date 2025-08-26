@@ -1,0 +1,43 @@
+public class PrimeUpto100
+{
+	public static Boolean isPrime(int num)
+	{
+		if(num <= 1)
+		{
+			return false;
+		}
+		for(int i = 2; i <= num/2; i++)
+		{
+			if(num % i == 0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	public static void printPrimeUpto100()
+	{
+		System.out.println("prime numbers from 1 to 100 are:");
+		for(int i = 1; i <= 100; i++)
+		{
+			if(isPrime(i))
+			{
+				System.out.print(i + "");
+			}
+		}
+		System.out.println();
+	}
+	public static void main(String[] args)
+	{
+		printPrimeUpto100();
+	}
+}
+	
+
+
+
+/*
+java PrimeUpto100
+prime numbers from 1 to 100 are:
+2357111317192329313741434753596167717379838997
+*/
