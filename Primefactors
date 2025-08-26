@@ -1,0 +1,35 @@
+/*
+java Primefactors
+Enter a number:
+5
+prime factors of5are:
+5
+*/
+
+import java.util.Scanner;
+
+public class Primefactors
+{
+	public static void printPrimeFactors(int num)
+	{
+		System.out.println("prime factors of" + num + "are:");
+		for(int i=2; i<=num; i++)
+		{
+			while(num % i == 0)
+			{
+				System.out.println(i + "");
+				num /= i;
+			}
+		}
+		System.out.println();
+	}
+	public static void main(String []args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int number = sc.nextInt();
+		
+		printPrimeFactors(number);
+		sc.close();
+	}
+}
