@@ -1,0 +1,26 @@
+import java.util.*;
+
+class RemoveDuplicateswiords {
+    public static void main(String[] args) {
+        // Create an ArrayList with duplicates
+        ArrayList<String> list = new ArrayList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("apple");
+        list.add("orange");
+        list.add("banana");
+        list.add("mango");
+
+        System.out.println("Original List: " + list);
+
+        // Remove duplicates while preserving order
+        ArrayList<String> newList = new ArrayList<>(new LinkedHashSet<>(list));
+
+        System.out.println("List after removing duplicates: " + newList);
+    }
+}
+/*
+Original List: [apple, banana, apple, orange, banana, mango]
+List after removing duplicates: [apple, banana, orange, mango]
+
+*/
