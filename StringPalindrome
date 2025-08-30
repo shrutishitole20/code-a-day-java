@@ -39,3 +39,8 @@ public class StringPalindrome
         return true; // Palindrome
     }
 }
+
+/*
+Enter a string: madam
+The string is a Palindrome.
+*/
