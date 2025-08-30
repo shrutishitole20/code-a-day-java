@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class StringPalindrome {
-    public static void main(String[] args) {
+public class StringPalindrome 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
 
         // Input from user
@@ -12,9 +14,11 @@ public class StringPalindrome {
         str = str.toLowerCase();
 
         // Check palindrome
-        if (isPalindrome(str)) {
+        if (isPalindrome(str)) 
+        {
             System.out.println("The string is a Palindrome.");
-        } else {
+        } else 
+        {
             System.out.println("The string is NOT a Palindrome.");
         }
     }
